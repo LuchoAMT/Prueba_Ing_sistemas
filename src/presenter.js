@@ -1,4 +1,4 @@
-import mostrar from "./lector";
+import ops from "./lector";
 
 const first = document.querySelector("#frase");
 const form = document.querySelector("#leer-form");
@@ -9,6 +9,8 @@ form.addEventListener("submit", (event) => {
 
   const frase = first.value;
 
-  div.innerHTML = "<p>" + mostrar(frase) + "</p>";
+  div.innerHTML = "<p>" + ops.mostrar(frase) + "</br>"
+  + ops.leer(frase)
+  + "</p>";
 });
 

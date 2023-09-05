@@ -1,7 +1,11 @@
-import mostrar from "./lector.js";
+import ops from "./lector.js";
 
 describe("Leer", () => {
   it("mostrar la frase recibida", () => {
-    expect(mostrar("aaa")).toEqual("aaa");
+    expect(ops.mostrar("aaa")).toEqual("aaa");
+  });
+
+  it("mostrar la cantidad de palabras no repetidas", () => {
+    expect(ops.leer("aaa bbb")).toEqual(1);
   });
 });
